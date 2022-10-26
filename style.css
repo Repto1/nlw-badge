@@ -8,6 +8,7 @@ body {
   --black: hsl(240, 6%, 13%);
   --gray: hsl(240, 9%, 89%);
   --dark-gray: hsl(240, 7%, 78%);
+  --bg: hsl(240, 6%, 20%);
 
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -17,12 +18,14 @@ body {
 body {
   display: grid;
   place-items: center;
+  background-color: var(--bg);
 }
 
 main {
-  background-image: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 98vw;
+  min-height: 812px;
+  height: 98vh;
   border-radius: 0.75rem;
 }
 
@@ -87,4 +90,11 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    max-width: 480px;
+    max-height: 720px;
+  }
 }

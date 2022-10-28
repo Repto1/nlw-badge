@@ -1,6 +1,6 @@
 const linksSocialMedia = {
   github: 'Repto1',
-  youtube: 'UCCHdqJ0NbM_2ZDQscTFpd4g',
+  youtube: '@repto1',
   linkedin: 'repto1',
   instagram: 'reptodm',
   twitter: 'repto_1'
